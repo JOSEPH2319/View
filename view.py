@@ -4,6 +4,8 @@ conn = sqlite3.connect('chinook.sqlite')
 library = conn.cursor()
 
 
+CREATE VIEW
+EXAMPLE AS
 SELECT *
 FROM library
 WHERE name LIKE 'Grunge';
